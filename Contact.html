@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha insurance Brokers</title>
+    <link rel="stylesheet" href="/pages/FontAwesome/css/all.css" />
+    <link rel="stylesheet" href="/pages/FontAwesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/pages/bootstrap-5.0.1-dist/bootstrap.min.css" />
+    <link rel="stylesheet" href="/pages/style.css">
+    <link rel="stylesheet" href="/pages/media.css">
+    <link rel="stylesheet" href="/pages/animation/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/pages/animation/owl.theme.default.min.css" />
+
+    <script src="/pages/bootstrap-5.0.1-dist/bootstrap.min.js"></script>
+    <script src="/pages/bootstrap-5.0.1-dist/popper.min.js"></script>
+    <script src="/pages/bootstrapVs4/jquery-3.5.1.slim.min.js"></script>
+    <script src="/pages/bootstrapVs4/popper.min.js"></script>
+    <script src="/pages/bootstrapVs4/bootstrap.min.js"></script>
+    <script src="/pages/animation/owl.carousel.min.js"></script>
+    <script src="/pages/smtp/smtp.js"></script>
+    <script src="/pages/scripts.js"></script>
+</head>
+<body>
+  <!-- header -->
+
+  <nav>
+    <div class="open">
+        <i onclick='openMenu()' class="fas fa-bars">
+        </i>
+        <img src="/images/alpha_logo.png" />
+    </div>
+    <div id="menu" class="nav">
+        <div id="mobile">
+            <a href="#" class="close" onclick="closeSide()">
+                <span class="fas fa-window-close"></span>
+            </a>
+
+            <a href="/index.html">Home</a>
+
+            <div class="dropdown">
+                <a href="#" class="fa fa-servicestack dropbtn">service 
+                <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <h6>Insurance category</h6>
+                    <a href="/Home/service.html"style="font-size:15px; margin:-10px -0px -10px 0; ">Business</a>
+                    <a href="/Home/Property.html"style="font-size: 15px; margin: -10px -0px -10px 0;">Property</a>
+                    <a href="/Home/Personal.html"style="font-size: 15px; margin: -10px -0px -10px 0;">Personal protect</a>
+                </div>
+            </div>
+           
+            <a href="/Home/team.html"> Team</a>
+            <a href="/Home/Contact.html"> Contact</a>
+            <a href="/Home/About.html">About us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- end of header -->
+
+<!-- begin of contact -->
+<div class="container-fluid jesse-contact">
+    <p>Get in touch </p>
+</div>
+<div class="container last"style="width:90%;margin:50px auto;">
+    
+    <div class=" contact-box">
+        <div class="col-md-6">
+            <div class="contact-left">
+                <h3>Send your mail</h3>
+                <form action="javascript:sendmail()" method="post">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name </label>
+                            <input type="text" placeholder="Full name" id="Name" />
+                        </div>
+                        <div class="input-group">
+                            <label>Email </label>
+                            <input type="email" placeholder="Your mail" id="Email" />
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone </label>
+                            <input type="text" placeholder="Phone" id="Phone" />
+                        </div>
+                        <div class="input-group">
+                            <label>Subject </label>
+                            <input type="text" placeholder="Subject" id="Subject" />
+                        </div>
+
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Wright yout message" id="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                </div>
+            </div>
+            <div class="col-md-6 rightContact">
+                <div class=" contact-right">
+                    <h3>Reach us</h3>
+                    <div class="info-cont">
+                        <ul>
+                            <li>
+                                <a href="#" class="fas fa-phone"> CALL US</a>
+                                <p>+250783136889</p>
+                            </li>
+                            <li>
+                                <a href="#" class="fas fa-mail-bulk"> EMAIL</a>
+                                <p>info@aibr-broker.co.rw</p>
+                            </li>
+                            <li>
+                                <a href="#" class="fas fa-clock"> BUSINESS HOUR</a>
+                                <p>Mon - Fri 08:00 - 05:00</p>
+                            </li>
+                            <li>
+                                <a href="#" class="fas fa-location-arrow"> OUR LOCATION</a>
+                                <p>kimisagara, Bibare, imitare</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="all-icons">
+                        <a class="fab fa-facebook-f" href="https://web.facebook.com/aibr0789310018/about/?ref=page_internal" target="_blank"></a>
+                        <a class="fab fa-twitter" href="#"></a>
+                        <a class="fab fa-instagram" href="#"></a>
+                        <a class="fab fa-youtube" href="#"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script>
+
+    function sendmail() {
+        var name = $('#Name').val();
+        var email = $('#Email').val();
+        var message = $('#Phone').val();
+        var subject = $('#Subject').val();
+        var message = $('#Message').val();
+
+        var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Phone: ' + phone + '<br>Subject: ' + subject + '<br>Message: ' + message;
+
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "info@aibr-broker.co.rw",
+            Password: "jesse",
+            To: "info@aibr-broker.co.rw",
+            From: "info@aibr-broker.co.rw",
+            Subject: "New mail on contact form from:" + name,
+            Body: Body
+        }).then(
+            message => {
+                if (message == 'OK') {
+                    alert('Your mail has been send thank you for connecting.');
+                } else {
+                    console.error(message);
+                    alert('There is error at sending message.')
+                }
+            }
+        );
+    }
+</script>
+
+
+
+ <!-- end of property -->
+
+ <!-- Begin of footer -->
+
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="myFoot">
+            <div class="col-md-3 alphas">
+                <img src="/images/alpha_logo.png" />
+                <p>
+                    <span class="font">ALPHA INSURANCE BROKERS</span> is a professional insurance broker recognized
+                    in Republic of Rwanda under license no B 05/2020 granted by the National
+                    Bank of Rwanda "NBR", Rwandan Regulator of the insurance industry.
+                </p>
+            </div>
+            <div class="col-md-3 business">
+                <h4>Business Insurance</h4>
+                <ul>
+                    <li><a href="#">Business interruption</a></li>
+                    <li> <a href="#">Third party liability</a></li>
+                    <li> <a href="#">Legal counsel coverage</a></li>
+                    <li> <a href="#">Key man insurance</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 is-property">
+                <h4>Property Insurance</h4>
+                <ul>
+                    <li><a href="#">Buildings, general installations</a></li>
+                    <li> <a href="#"> Machines</a></li>
+                    <li> <a href="#"> Computer equipment</a></li>
+                    <li> <a href="#"> Motor Vehicle</a></li>
+                    <li> <a href="#">Cargo</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 is-personal">
+                <h4>Personal protection insur</h4>
+                <ul>
+                    <li><a href="#">Life insur, retirement-saving plans</a></li>
+                    <li> <a href="#">Property, wealth and personal asset transfers</a></li>
+                    <li> <a href="#">Medical Insur</a></li>
+                    <li> <a href="#">Personal accident insur</a></li>
+                    <li> <a href="#">Workman’s compensation</a></li>
+                    <li> <a href="#">End of career indemnity</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="is-contact">
+                    <div class="col-md-4 infoContact">
+                        <h4 style="color:#394496">Contact info</h4>
+                        <ul>
+                            <li class=""><a href="#">Kimironko,Bibare,Imitare</a></li>
+                            <li><a href="#">+250783136889</a></li>
+                            <li><a href="#">info@aibr-broker.co.rw</a></li>
+                            <li><a href="#">Mon-Fri 08h00 AM-17h00 PM</a></li>
+                            <li><a href="#">Saturday-sunday:closed</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 is-cons">
+                        <a class="fab fa-facebook-f" href="https://web.facebook.com/aibr0789310018/about/?ref=page_internal" target="_blank"></a>
+                        <a class="fab fa-twitter" href="#"></a>
+                        <a class="fab fa-instagram" href="#"></a>
+                        <a class="fab fa-youtube" href="#"></a>
+                    </div>
+                    <div class="col-md-4 is-privacy">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row is-copyright">
+                <p>Copyrights © 2021 - Alpha Insurance Brokers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- enf of footer -->
+
+<script type="text/javascript">
+$(document).on('click', 'a', function () {
+    $(this).addClass('act')
+})
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length
+for (let i = 0; i < menuLength; i++) {
+    if (menuItem[i].href === currentLocation) {
+        menuItem[i].className = 'active'
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+</div>
+ 
+</body>
+</html>

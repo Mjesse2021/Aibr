@@ -1,0 +1,915 @@
+﻿
+.my-slider {
+    padding: 0;
+    margin: 0;
+}
+
+/* begin header and footer*/
+.myFoot {
+    background-color:#394496;
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 200px;
+    margin-top: 10px;
+    color:white;
+    width:100%;
+    
+}
+
+.dropbtn{
+    background-color:#394496;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    border:none;
+}
+.dropdown{
+    position:relative;
+    display:block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#394496;
+    width:150px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index:1;
+    font-size:5px;
+}
+.dropdown-content a {
+    color:black;
+    text-decoration:none;
+   
+    
+}
+.dropdown-content h6{
+    margin-top:20px;
+    color:#4d8dbe;
+    font-weight:500;
+}
+.dropdown-content h6:after{
+    content:'';
+    width:140px;
+    height:2px;
+    background-color:black;
+    display:block;
+    margin-top:5px;
+}
+ .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+
+
+    .afts h2, .aft h3::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100px;
+        background-color: #4d8dbe;
+        margin-top: 5px;
+    }
+
+.logo img {
+    max-width: 170px;
+    height: 100px;
+    margin-top: -20px;
+}
+
+.alphas img {
+    width: 200px;
+    height: 100px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+
+.myFoot p{
+    font-family:'Times New Roman';
+    text-align:justify;
+   
+    
+}
+.myFoot .alpha .font{
+    font-weight:bold;
+}
+.myFoot .alpha{
+  margin-left:20px;
+  
+}
+.myFoot .business{
+    margin-left:20px;
+    }
+.myFoot .is-property{
+    margin-left:-20px;
+}
+myFoot .is-personal {
+    padding: 0px;
+    margin: 0px;
+}
+.infoContact a {
+    text-decoration: none;
+    color: white;
+}
+.infoContact{
+   
+    margin-left:-10px;
+}
+.infoContact a:hover {
+    color: #4d8dbe;
+}
+.is-contact {
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #394496;
+    margin-top: -200px;
+    color: white;
+}
+.is-cons {
+ height: 50px;
+ display: inline-block;
+ margin-top: 110px;
+
+}
+ .is-cons a {
+  margin: 20px;
+ color:white;
+ text-decoration: none;
+         
+    }
+    .is-cons a:hover {
+        color: #4d8dbe;
+        font-size: 20px;
+    }
+
+.is-privacy{
+    margin-top:135px;
+    align-items:center;
+   
+    
+}
+.is-privacy a{
+   justify-content:center;
+   align-content:center;
+   margin-left:30%;
+ color:white;
+ text-decoration: none;
+}
+.is-privacy a:hover{
+ color:#4d8dbe;
+ font-size:18px;
+}
+.business a,
+.is-property a,
+.is-personal a{
+    color: white;
+    text-decoration: none;
+}
+
+.is-copyright {
+    align-content:center;
+    justify-content:center;
+    background-color:#4d8dbe;
+   
+}
+.is-copyright p{
+    margin-left:60%;
+}
+/* end of header and footer*/
+
+
+
+
+
+
+
+
+
+/* begin of first card on home page*/
+
+.is-slider{
+    height:700px;
+}
+
+.carousel-item img{
+    height:700px;
+}
+
+#carouselExampleCaptions {
+    height: 100%;
+}
+
+.carousel-caption {
+    margin-bottom: 280px;
+    font-weight:800;
+}
+
+.main {
+    background-color: beige;
+}
+
+.titre{
+    color: #394496;
+}
+
+
+.is-card {
+    background-color: white;
+    margin-bottom: 13px;
+    min-height: 200px;
+}
+
+.is-card:hover {
+    background-color: #4d8dbe;
+}
+
+
+.content {
+    display:block;
+    height: 100%;
+}
+
+.content p{
+    margin-left: 400px;
+    margin-top: -50px;
+}
+.content h2{
+    margin-left: 350px;
+    margin-top: -70px;
+}
+
+.titre1{
+    padding: 80px;
+}
+
+.icon-span {
+    display:inline-block;
+    width: 100px;
+    font-size: 100px;
+    margin-top:10px;
+    margin-left:10px;
+    color: #394496;
+}
+
+.Property{
+    margin-bottom:10px;
+    background-color: white;
+    display: flex;
+}
+
+.famille {
+    margin-bottom: 10px;
+    background-color: white;
+    margin-left: 9px;
+    display: flex;
+}
+
+.famille a{
+    
+    color: white;
+}
+
+.famille:hover{
+    background-color: #4d8dbe;
+}
+
+.Property{
+    width: 539px;
+    margin-left:11px;
+}
+
+.Property a{
+    color: #394496;
+}
+
+.Property:hover{
+    background-color: #4d8dbe;
+}
+
+.content-bottom{
+    margin-left: 150px;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    border: 1px solid black;
+    width:50%;
+    text-align: center;
+    padding: 10px 0 8px 0;
+    display:block;
+    margin-top:30px;
+}
+
+.button:hover{
+    background-color: white;
+    color: #394496;
+}
+
+/* End of first card on home page*/
+
+
+
+
+
+
+
+
+
+
+.contact-info{
+ padding:50px;
+}
+.is-contact-info a{
+    width:200px;
+    background-color:#394496;
+    color: white;
+}
+
+.is-contact-info{
+    margin-left: 400px;
+}
+
+/* carte*/
+.first-card .card,
+.second-card .card,
+.third-card .card{
+  height: 490px;
+}
+
+.btn{
+    background-color:#394496;
+}
+    .btn:hover {
+        background-color: #4d8dbe;
+    }
+
+/* carte*/
+
+
+
+
+/*Service page*/
+
+
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.left-menu ul{
+    list-style-type:none;
+    line-height:2;
+    width:100%;
+    padding-top:50px;
+}
+
+    .left-menu ul li {
+        display: block;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-weight:bold;
+    }
+
+.left-menu ul li a{
+    width:15px;
+    text-decoration:none;
+    font-size:x-large;
+    color:black;
+   
+}
+    .left-menu ul li:hover, .left-menu ul li:active{
+        background-color:#394496;
+    }
+.left-menu h2{
+    color:#4d8dbe;
+  
+}
+
+
+.is-services-un img {
+    height: 600px;
+    width: 100%;
+}
+.personal img {
+    height: 600px;
+    width: 100%;
+}
+
+.is-services-un{
+    padding:0;
+}
+
+
+.partie-trois,
+.partie-quatre{
+    margin-bottom:10px;
+}
+
+.services-deux {
+    margin-bottom: -50px;
+}
+
+.services-deux h2 {
+    color: #394496;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.services-deux p{
+    font-weight:500;
+}
+.services-deux span{
+    font-weight:bold;
+}
+
+.partie-un{
+    background-color:white;
+    height:250px;
+    padding-left:10px;
+}
+.partie-un h5{
+    color:#4d8dbe;
+}
+.partie-un p{
+    margin-left:0;
+
+}
+.partie-deux {
+    background-color: white;
+    height: 250px;
+    padding-left: 10px;
+}
+.partie-deux h5{
+    color:#4d8dbe;
+}
+.partie-deux p{
+    margin-left:0;
+}
+
+.partie-trois{
+    background-color:white;
+    height:250px;
+    padding-left:10px;
+}
+.partie-trois h5{
+    color:#4d8dbe;
+}
+.partie-trois p{
+    margin-left:0;
+}
+
+.partie-quatre{
+    background-color:white;
+    height:250px;
+    padding-left:10px;
+}
+.partie-quatre p{
+    margin-left:0;
+}
+.partie-quatre h5{
+    color:#4d8dbe;
+}
+
+.propriete img {
+    height: 400px;
+    width: 100%;
+}
+
+
+.propriete-un h2{
+    color:#394496;
+    text-align:center;
+    padding-top:30px;
+}
+.content-propre p{
+    font-weight:500;
+    margin-top:30px;
+}
+.content-propre span{
+    color:#4d8dbe;
+}
+
+
+
+
+
+
+
+
+.all-con {
+    margin-bottom: -50px;
+}
+#is-service p {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+/*End service page*/
+
+
+/* Begin of about*/
+.apropos {
+    padding: 0;
+    background-image: url(/images/about/insurance.jpg);
+    background-size: cover;
+    height: 500px;
+    position:relative;
+    width:100%;
+    z-index:-100;
+}
+
+.apropos:before{
+    content:'';
+    display:block;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right, #394496 60%, #4d8dbe 100%);
+    opacity:0.8;
+}
+
+.apropos ul li {
+    font-weight: 800;
+}
+
+.first-about ul {
+    margin-top: 50px;
+}
+
+
+.first-about {
+    color: #4d8dbe;
+    margin-left: 40px;
+    position: absolute;
+    top: 120px;
+}
+
+.first-about h2{
+    color:#394496;
+}
+
+.dessins, .dessins .row {
+    height: 300px;
+}
+
+
+
+.my-roue{
+    height:150px;
+}
+.my-roue .image img{
+    height:130px;
+}
+.second-about {
+    margin-top: 20px;
+}
+.second-about p{
+ font-weight:500;
+
+}
+
+.is-about {
+    background-image: url(/images/aboutpic.jpg);
+    background-size: cover;
+}
+.partner h2{
+ color:#394496;
+ margin-top:30px;
+}
+.partner p{
+    font-weight:500;
+}
+.a-pages img {
+   height: 400px;  
+   width:600px;
+   padding:20px;
+
+}
+.p-pages p{
+ padding-top:80px;
+ margin-right:10px;
+ font-weight:500;
+}
+.c-pages img {
+    margin-top:40px;
+    height: 400px;
+    width: 600px;
+    padding: 20px;
+}
+.b-pages h3 {
+    margin-top: 10px;
+    color: #394496;
+}
+.about-b{
+    margin-top:20px;
+}
+.b-pages p{
+    margin-top:40px;
+    font-weight:500;
+}
+
+.d-pages img{
+    margin-top: 40px;
+    height: 400px;
+    width: 600px;
+    padding: 20px;
+}
+.e-pages h3 {
+    margin-top: 20px;
+    color: #394496;
+}
+.e-pages p{
+    margin-top:60px;
+    font-weight:500;
+}
+.activity h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #394496;
+    text-align:center;
+}
+.protection-p p{
+    font-weight:500;
+    margin-top:40px;
+}
+.svg1 img{
+    height:400px;
+    width:600px;
+    padding:30px;
+}
+
+.svg2 img {
+    height: 400px;
+   width:600px;
+   padding:30px;
+   margin-top:-20px;
+}
+.oriented h3 {
+    margin-top: 40px;
+    color: #394496;
+}
+
+.oriented p{
+    font-weight: 500;
+}
+
+.svg3 img {
+    height: 400px;
+    width: 600px;
+    padding: 40px;
+}
+.management h3 {
+    margin-top: 30px;
+    color: #394496;
+}
+.management p {
+    margin-top: 15px;
+    font-weight:500;
+}
+
+.svg4 img{
+    height: 400px;
+    width:600px;
+    padding:40px;
+    margin-top:-70px;
+}
+
+.risk h3 {
+    margin-top: 20px;
+    color: #394496;
+}
+
+.risk p {
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.svg5 img{
+    height: 400px;
+    width:600px;
+    padding:30px;
+}
+.multi h3 {
+    margin-top: 20px;
+    color: #394496;
+}
+
+.multi p {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.howdoes h2{
+    margin-top:20px;
+    color:#394496;
+    margin-left:200px;
+}
+
+.owl-item{
+    width:100%;
+}
+
+.howdoes ul {
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.note p {
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.benefit img{
+    height:400px;
+    width:600px;
+    padding:30px;
+}
+.part2 {
+    font-weight: 500;
+}
+.protection-p h3{
+    color:#394496;
+}
+/* End of about*/
+
+
+
+
+
+
+
+/* begin of contact*/
+
+.jesse-contact {
+    height: 220px;
+    background-color:beige;
+}
+.jesse-contact p{
+    font-size: 100px;
+    font-weight: 400;
+    color:#394496;
+}
+
+
+.all-icons{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+}
+.all-icons a{
+    margin:20px;
+    font-size:30px;
+    color:black;
+    text-decoration:none;
+}
+.all-icons a:hover{
+    font-size:32px;
+    color:#394496;
+}
+.my-cont{
+   margin-bottom:-70px;
+}
+
+
+.contact-box {
+    background:white;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+.contact-left {
+    padding: 10px 10px;
+}
+
+.contact-right {
+    padding: 40px;
+    background-color: #4d8dbe;
+}
+h3{
+    margin-bottom:30px;
+}
+.input-row{
+    justify-content:space-between;
+    margin-bottom:20px;
+    display:flex;
+}
+.input-row .input-group{
+  flex-basis:45%;
+
+}
+input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #394496;
+    outline:none;
+    padding-bottom:5px;
+}
+textarea{
+    width:100%;
+    border: 1px solid #394496;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+}
+label{
+    margin-bottom:6px;
+    display:block;
+    color:#394496;
+}
+
+button{
+    background:#4d8dbe;
+    width:100px;
+    border:none;
+    outline:none;
+    color:white;
+    height:35px;
+    border-radius:30px;
+    margin-top:20px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h3{
+    color:#394496;
+    margin-bottom:30px;
+    font-weight:600;
+}
+.contact-right h3 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.info-cont ul li {
+    list-style-type: none;
+    margin: 0;
+}
+
+ .info-cont ul li a {
+ text-decoration: none;
+ color:#394496;
+  }
+
+
+
+/*  end of contact*/
+/* begin of team page*/
+.is-all-team {
+    background-image: url(/images/pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+    margin: 0 -15px 0px -15px;
+}
+
+
+.my-team{
+ margin-bottom:50px;
+}
+.my-team h3{
+    color:#394496;
+   
+}
+.my-team p {
+ font-weight: 500;
+}
+.my-team span{
+    color:#4d8dbe;
+}
+
+
+.all-jesse{
+    margin-top:60px;
+    padding-bottom:40px;
+}
+.jesse-team h2:after {
+    content: '';
+    display:block;
+   background-color:#394496;
+    width: 80px;
+    height:2px;
+
+}
+.jesse-team{
+    margin-bottom:-50px;
+   
+    
+}
+.card-body{
+    font-weight:600;
+}
+
+
+
+
+
+/* End of team page*/
+
+
+

@@ -1,0 +1,500 @@
+﻿/* begin of navigation bars on phone*/
+
+body{
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #394496;
+    height: 100px;
+    width: 100%;
+}
+
+.open i {
+    float: right;
+    padding: 10px;
+    font-size: 80px;
+    top:20px;
+    display: none;
+    color:#4d8dbe
+}
+
+.open img {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 90px;
+    margin-top: -15px;
+    margin-left:10px;
+}
+
+#mobile {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 80%;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close span {
+    display: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 5px 15px 5px;
+    text-transform: uppercase;
+    font-size: large;
+    margin-top: 25px;
+}
+
+#menu a:hover {
+    color: #4d8dbe;
+}
+
+#menu a.active {
+    color: #4d8dbe;
+}
+
+@media(max-width:560px) {
+    #mobile {
+        flex-direction: column;
+        width:0;
+        background: #394496;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        overflow-y: hidden;
+    }
+    
+    #mobile{
+        overflow-y:hidden;
+    }
+
+    .open i {
+        display: block;
+        right: 0;
+        padding: 15px 10px 10px 10px;
+        font-size: 30px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .close span {
+        font-size: 30px;
+        color: #4d8dbe; 
+        position: absolute;
+        top: 15px;
+        right: 0;
+        display: block;
+        margin-right: 15px;
+    }
+    #menu a:hover, a:active {
+        color: #4d8dbe;
+    }
+    .test {
+        z-index: -1;
+    }
+    #mobile {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .is-card {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    .content {
+        display: block;
+    }
+    .content p, .content .button,.content h2{
+        display:block;
+        margin-left:30px;
+    }
+    .is-colone .button{
+        margin-bottom: 10px;
+    }
+    .Property,.famille {
+       flex-direction:column;
+       margin: 10px auto 10px;
+    }
+    .content-bottom{
+        margin-bottom: 10px;
+    }
+    .button{
+        width:100%;
+    }
+    .is-contact-info {
+        margin-left: 0;
+    }
+    .first-card{
+        margin-bottom:20px;
+       
+    }
+    .second-card{
+        margin-bottom:20px;
+    }
+        .first-card .card,
+        .second-card .card,
+        .third-card .card {
+            height: 550px;
+           
+        }
+
+    .is-contact {
+       flex-direction:column;
+    }
+     .is-cons{
+        margin-left:30px;
+     }
+    .is-property h4 {
+        margin-left: 40px;
+    }
+
+    .is-property ul li {
+        margin-left: 40px;
+    }
+
+    .is-copyright p {
+        margin-left: -20px;
+        text-align: justify;
+    }
+
+    .is-privacy{
+        margin-left:10px;
+    }
+   .left-menu ul li a{
+    font-size:15px;
+   
+}
+   .left-menu ul{
+    padding-top:20px;
+}
+   .side{
+       width:100%;
+   }
+   .left-menu h2{
+    margin-top:10px;
+}
+
+#is-insurance p{
+    margin-left:0;
+
+}
+
+.owl-item{
+    height:150px;
+    
+}
+
+.owl-item .image{
+    width:100px;
+    margin-right:10px;
+}
+.two-card{
+    margin-top:20px;
+}
+.three-card{
+    margin-top:20px;
+}
+ .jesse-contact p {
+        font-size: 80px;
+    }
+
+ .services-un{
+     width:200px;
+ }
+
+ 
+.carousel-caption {
+    font-weight:400;
+    margin:0;
+}
+
+.is-slider{
+    height:300px;
+}
+
+.carousel-item img{
+    height:300px;
+}
+
+.is-services-un img {
+    height: 300px;
+    width: 100%;
+}
+.personal img {
+    height: 300px;
+    width: 100%;
+}
+
+.propriete img {
+    height: 300px;
+    width: 100%;
+}
+.partie-un,
+.partie-deux,
+.partie-trois,
+.partie-quatre{
+    margin-bottom:15px;
+}
+
+.partie-quatre{
+    height:280px;
+}
+
+.is-about{
+    height:300px;
+    margin-top:-20px;
+}
+
+.a-pages img{
+    display:block;
+    height:400px;
+    width:100%;
+    padding:0;
+}
+
+.c-pages img{
+    display:block;
+    height:400px;
+    width:100%;
+    padding:0;
+}
+
+.d-pages img{
+    display:block;
+    height:400px;
+    width:100%;
+    padding:0;
+
+}
+
+.howdoes h2{
+    margin-left:5px;
+}
+
+.howdoes ul {
+    margin-left: 5px;
+}
+.note p {
+    margin-left: 5px;
+    font-weight: 500;
+}
+.benefit img{
+    height:400px;
+    width:100%;
+    padding:0;
+}
+
+.svg1 img,
+.svg2 img,
+.svg3 img,
+.svg4 img,
+.svg5 img{
+    width:350px;
+    height:400px;
+}
+
+.input-row{
+    flex-direction:column;
+}
+.contact-left{
+    padding:1px;
+}
+.rightContact{
+    width:100%;
+}
+.contact-right{
+    padding:1px;
+}
+
+button{
+    margin-bottom:20px;
+}
+
+ }
+  
+
+
+@media(min-width:560px) {
+
+    #menu a {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: 25px;
+        padding: 18px 3px 15px 2px;
+    }
+
+    .is-card {
+        min-height: 300px;
+    }
+
+    .is-colone {
+        margin-top: 30px;
+    }
+
+    .Property {
+        min-height: 300px;
+    }
+
+    .famille {
+        min-height: 300px;
+    }
+
+    .content-bottom {
+        margin-top: 30px;
+    }
+
+    .is-contact-info {
+        margin-left: 200px;
+    }
+
+    .first-card {
+        margin-bottom: 20px;
+    }
+
+    .second-card {
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .is-contact {
+        flex-direction: column;
+    }
+
+    .is-cons {
+        margin-left:0px;
+    }
+    .is-property h4 {
+        margin-left: 40px;
+    }
+
+    .is-property ul li {
+        margin-left: 80px;
+    }
+
+    .is-privacy a {
+        margin-left:20px;
+    }
+   .left-menu h2{
+    margin-top:10px;
+}
+
+    .side {
+        width: 100%;
+    }
+    .one-card {
+        margin-left: 50px;
+    }
+
+    .two-card {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .three-card {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .jesse-contact p{
+       font-size:80px;
+    }
+
+}
+
+
+
+
+
+@media(min-width:768px) {
+    #menu a {
+        padding: 18px 5px 15px 5px;
+        font-size: large;
+    }
+
+    .Property, .famille {
+        display: flex;
+        flex: 1;
+    }
+
+    .first-card .card,
+    .second-card .card,
+    .third-card .card {
+        height: 580px;
+    }
+
+        .first-card .card .btn {
+            margin-top: 50px;
+        }
+
+        .second-card .card .btn {
+            margin-top: 50px;
+        }
+
+        .third-card .card .btn {
+            margin-top: 50px;
+        }
+
+    .is-contact {
+        flex-direction: row;
+    }
+
+    .is-copyright p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .is-property ul li {
+        margin-left: 25px;
+    }
+
+    .is-personal h4 {
+        margin-left: 10px;
+    }
+
+    .side {
+        width: 30%;
+    }
+
+    .left-menu h2 {
+        margin-top: -280px;
+    }
+
+    .left-menu ul {
+        margin-top: 20px;
+    }
+
+        .left-menu ul li a {
+            font-size: 18px;
+        }
+
+    .one-card .card {
+        margin-top: 20px;
+    }
+
+    .two-card {
+        width: 300px;
+    }
+
+    .three-card {
+        width: 300px;
+    }
+
+    .is-info {
+        padding-left:40px;
+    }
+}
